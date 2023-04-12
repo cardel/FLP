@@ -67,5 +67,5 @@
 
 (define non-empty-record->elm
   (lambda (reg)
-    (cadr reg)))
+    (caddr reg)))
        
