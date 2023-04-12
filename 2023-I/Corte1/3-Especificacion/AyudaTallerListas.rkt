@@ -8,8 +8,8 @@
     (list 'empty-record)))
 
 (define non-empty-record
-  (lambda (elm rec)
-    (list 'non-empty-record elm rec)))
+  (lambda (key elm rec)
+    (list 'non-empty-record key elm rec)))
 
 ;;Datatype item
 (define simple-item
@@ -42,8 +42,10 @@
 
 (define registro1
   (non-empty-record
+   'a
    (simple-item (item-num 4))
    (non-empty-record
+    'b
     (list-item
      (non-empty-list-item
       (simple-item (item-sym 'x))
@@ -53,6 +55,7 @@
     (empty-record)
     )))
 
+(display registro1)
 
 ;;Observadores
 
