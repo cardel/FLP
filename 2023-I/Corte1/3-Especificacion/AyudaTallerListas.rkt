@@ -17,8 +17,8 @@
     (list 'simple-item dat)))
 
 (define list-item
-  (lambda (dat)
-    (list 'list-item)))
+  (lambda (datum lnode)
+    (list 'list-item datum lnode)))
 
 ;;Datatype simple-item
 (define item-num
