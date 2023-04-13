@@ -47,6 +47,7 @@
    (non-empty-record
     'b
     (list-item
+     (simple-item (item-num 22))
      (non-empty-list-item
       (simple-item (item-sym 'x))
       (non-empty-list-item
